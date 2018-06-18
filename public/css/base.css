@@ -1,0 +1,313 @@
+/* Основные правила CCS3 */
+@charset "UTF-8";
+
+@font-face {
+    font-family: "OpenSansLight";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/OpenSansLight/OpenSansLight.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/OpenSansLight/OpenSansLight.woff") format("woff"),
+    url("../fonts/OpenSansLight.ttf") format("truetype");
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    color: #66666E;
+    cursor: default;
+    list-style: none;
+}
+
+html,
+body {
+    height: 100%;
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+    font-family: "OpenSansLight", sans-serif;
+    background: #F2F0ED url("../img/background.jpg");
+}
+
+#main {
+    flex: 1 0 auto;
+    margin-top: 20px;
+}
+
+a {
+    cursor: pointer;
+    transition: 0.5s all;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #72859C;
+}
+
+.title {
+    color: #FFF;
+    padding: 10px;
+    background: #415865;
+}
+
+.pick-m li,
+.pick-lg-h li {
+    color: #FFF;
+}
+
+/* Prefix Browser */
+::-webkit-input-placeholder {
+   color: #CAADBF; 
+}
+
+@-moz-document url-prefix() {
+    textarea {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+}
+
+/* Общие правила CSS3 */
+#share,
+.widget,
+.content,
+#lite-information {
+    width: 100%;
+    background: #FFF;
+    margin-bottom: 15px;
+    border: 1px solid #D3D5D7;
+}
+
+.widget a,
+.ya-share2 {
+    padding: 10px;
+    display: block;
+}
+
+.widget a:hover,
+#header-menu a:hover,
+#header-menu-touch a:hover {
+    color: #FFF;
+    background: #7A9EB1;
+}
+
+#profile-panels li, 
+.content-panels li {
+    margin: 2px;
+    padding: 5px;
+    font-size: 14px;
+    background: #ECECEC;
+}
+
+.widget-description,
+.content-description {
+    clear: both;
+    padding: 10px;
+}
+
+/* Правила CSS3 для основных элементов */
+#header-menu {
+    height: 55px;
+    background: #FFF;
+    border-bottom: 1px solid #D3D5D7;
+}
+
+#header-menu-touch {
+    display: none;
+}
+
+#content,
+#content-table {
+    width: 45%;
+    float: left;
+    margin: 0px 1.5% 0px 1.5%;
+}
+
+#content-table {
+    width: 71%;
+}
+
+#sidebar-left {
+    width: 25%;
+    float: left;
+    margin-left: 1%;
+}
+
+#sidebar-right {
+    width: 25%;
+    float: right;
+    margin-right: 1%;
+}
+
+#footer {
+    height: 60px;
+    background: #FFF;
+    margin-top: 20px;
+    border-top: 1px solid #D3D5D7;
+    flex: 0 0 auto; /* Для корректного отображения Footer */
+}
+
+/* Правила CSS3 для дополнительных элементов */
+#header-menu ul li {
+    float: left;
+}
+
+#header-menu ul li a {
+    display: block;
+    padding: 0px 10px;
+    line-height: 56px;
+}
+
+#footer-left,
+#footer-right,
+#footer-center {
+    float: left;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#footer-center {
+    width: 40%;
+}
+
+#footer-left,
+#footer-right {
+    width: 30%;
+}
+
+#footer-left a,
+#footer-right a,
+#footer-center a {
+    font-weight: bold;
+}
+
+.content-panels {
+    width: 95%;
+    margin: 5px;
+}
+
+.content-panels li {
+    float: left;
+}
+
+.content-section {
+    background: #A7F0ED;
+}
+
+.content-button {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#pagination input {
+    float: left;
+    margin: 0px 10px 10px 0px;
+}
+
+input[type = "url"],
+input[type = "text"],
+input[type = "date"],
+input[type = "email"],
+input[type = "password"] {
+    width: 95%;
+    height: 30px;
+    padding-left: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #E5E8EA;
+}
+
+input[type = "file"] {
+    width: 95%;
+    margin-bottom: 8px;
+    border: 1px solid #E5E8EA;
+    padding: 8px 0px 8px 10px;
+}
+
+textarea {
+    width: 95%;
+    min-height: 65px;
+    resize: vertical;
+    border: 1px solid #E5E8EA;
+    padding: 10px 0px 10px 10px;
+    font-family: "Trebuchet MS", sans‑serif;
+}
+
+select {
+    width: 97%;
+    margin-bottom: 8px;
+    border: 1px solid #E5E8EA;
+    padding: 5px 0px 10px 10px;
+    font-family: "Trebuchet MS", sans‑serif;
+}
+
+#profile-avatar img {
+    width: 95%;
+    margin: 3% 2.5% 0% 2.5%;
+}
+
+#profile-panels {
+    margin: 2% 2.5% 0% 2.5%;
+}
+
+#profile-panels li:last-child {
+    margin-bottom: 3%;
+}
+
+#lite-information {
+    font-size: 14px;
+    min-height: 100px;
+}
+
+#lite-information p {
+    margin: 2% 5% 2% 5%;
+}
+
+.news-date {
+    padding: 10px;
+    background: #ECECEC;
+}
+
+#news-button {
+    padding: 5px;
+}
+
+#message-danger,
+#message-success {
+    width: 93.4%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#message-success {
+    color: #31708F;
+    background: #D9EDF7;
+    border: 1px solid #BCE8F1;
+}
+
+#message-danger {
+    color: #A94442;
+    background: #F2DEDE;
+    border: 1px solid #EBCCD1;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 8px;
+    border-collapse: collapse;
+}
+
+th {
+    background: #ACF9F6;
+}
+
+th,
+td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #CCC;
+}
+
+tr:hover {
+    background: #D2FFFD;
+}

@@ -1,0 +1,94 @@
+/* Правила Media - запросов - 1250px */
+@media (max-width: 1250px) {
+    
+    #footer {
+        height: 110px;
+        margin-top: 5px;
+    }
+    
+    #footer-left,
+    #footer-right,
+    #footer-center {
+        width: 100%;
+    }
+    
+    #footer-left {
+        margin-top: 15px;
+    }
+    
+    #footer-right,
+    #footer-center {
+        margin-top: 5px;    
+    }
+    
+}
+
+/* Правила Media - запросов - 940px */
+@media (max-width: 940px) {
+    
+    #header {
+        display: none;
+    }
+    
+    #header-menu {
+        height: auto; 
+    }
+    
+    #header-menu-touch {
+        display: block;
+        background: #FFF;
+        line-height: 55px;
+        border-bottom: 1px solid #D3D5D7;
+    }
+    
+    #header-menu ul li {
+        float: none;
+    }
+    
+    #header-menu-touch a {
+        display: block;
+        padding: 0px 10px;
+    }
+    
+    #content {
+        width: 90%;
+        margin: 5px 5% 10px 5%;
+    }
+    
+    #content-table {
+        width: 90%;
+        margin: 5px 5% 0px 5%;
+    }
+    
+    #sidebar-left,
+    #sidebar-right {
+        width: 90%;
+        margin: 0px 5% 0px 5%;
+    }
+    
+    .content-description {
+        overflow: auto;
+    }
+    
+}
+
+/* Правила Media - запросов - 480px */
+@media (max-width: 480px) {
+    
+    #message-danger,
+    #message-success {
+        width: 91%;
+    }
+
+    #footer {
+        height: auto;
+        margin-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    #footer-left,
+    #footer-right {
+        display: none;
+    }
+    
+}

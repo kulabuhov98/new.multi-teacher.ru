@@ -1,0 +1,1 @@
+<?php defined("ACCESS") or exit("Access is deniend!") ?><?php if ($pages > 1): ?><div id = "pagination">    <?php for ($page = 1; $page <= $pages; $page++): ?>           <input type = "submit" class = "styler" value = "<?= $page ?>" onclick = "redirectToPage('<?= $uriPage ?>page=<?= $page ?>')">    <?php endfor ?></div><?php endif ?>

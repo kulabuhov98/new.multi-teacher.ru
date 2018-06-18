@@ -1,0 +1,1 @@
+<?php defined("ACCESS") or exit("Access is deniend!") ?><div class = "widget">    <div class = "title">Управление аккаунтом</div>    <a href = "/account/avatar">Основная фотография</a>    <a href = "/account/profile">Персональные данные</a>    <a href = "/account/recovery">Безопасность аккаунта</a>    <a href = "/logout">Выйти из системы</a></div>
